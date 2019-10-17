@@ -1,0 +1,56 @@
+body {
+	line-height:1;
+	margin-bottom:-1px;
+	background: #333333;
+}
+
+img {
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+
+.search-content {
+	background: white;
+	padding: 50px 0;
+	.page-title {
+		letter-spacing: 0.20em;
+		font-weight: 700;
+		font-size: 2em;
+		color: #5E3C56;
+		text-transform: uppercase;
+	}
+}
+
+#portfolio-wrapper {
+	padding: 0;
+}
+
+.blog, .post-type-archive-riddle, .search-results {
+	.pagination {
+		display: block;
+		padding: 20px 0;
+		.nav-links {
+			text-align: center;
+			> * {
+				color: white;
+			}
+			.page-numbers {
+				@extend .btn;
+				border-radius: 3px;
+				background: $brand-primary;
+				border: none;
+				&.current {
+					background: #472d41;
+					cursor: default !important;
+				}
+				&.next {
+					margin-left: 5px;
+				}
+				&.prev {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}

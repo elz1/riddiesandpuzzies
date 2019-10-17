@@ -1,0 +1,48 @@
+.single-post {
+	.wrapper {
+		background: white;
+	}
+}
+.hero {
+	height: 300px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.episode {
+	padding: 20px;
+	border: solid 1px white;
+	margin: 20px;
+}
+
+.nav-links {
+	.nav-previous {
+		display: inline-block;
+		i {
+			color: $brand-primary;
+			transition: transform .3s ease;
+		}
+		&:hover {
+			i {
+				transform: translateX(-5px);
+				transition: transform .3s ease;
+			}
+		}
+	}
+	.nav-next {
+		float: right;
+		display: inline-block;
+		i {
+			color: $brand-primary;
+			transition: transform .3s ease;
+		}
+		&:hover {
+			i {
+				transform: translateX(5px);
+				transition: transform .3s ease;
+			}
+		}
+	}
+}
